@@ -1,4 +1,4 @@
 #lang scribble/manual
 
-@title{Racket Package Template}
-@defmodule[racket-package-template]
+@title{Advent of Code 2019 Solutions}
+@defmodule[jackfirth-advent-of-code-2019]
