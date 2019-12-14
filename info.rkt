@@ -9,7 +9,10 @@
               "jackfirth-advent-of-code-2019")))
 
 (define deps
-  (list "base"))
+  (list "fancy-app"
+        "point-free"
+        "rebellion"
+        "base"))
 
 (define build-deps
   (list "racket-doc"
