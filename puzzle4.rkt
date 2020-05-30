@@ -35,19 +35,7 @@
     (check-equal? (bound-digits 256310) (list 2 5 6 3 1 0))
     (check-equal? (bound-digits 732736) (list 7 3 2 7 3 6))))
 
-(define-tuple-type state (a b c d e f) #:constructor-name constructor:state)
-
-(define-match-expander state
-  (syntax-rules ()
-    [(_ a b c d e f)
-     (? state?
-        (app state-a a)
-        (app state-b b)
-        (app state-c c)
-        (app state-d d)
-        (app state-e e)
-        (app state-f f))])
-  (make-rename-transformer #'constructor:state))
+(define-tuple-type state (a b c d e f))
 
 (define (next s)
   (match-define (state a b c d e f) s)
